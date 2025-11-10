@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend';
+    font-weight: 300;
+    margin: 5px;
+    padding: 5px;
+}
+
+header {
+    background-color: var(--color-griso);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 15vh;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-rosa2);
+}
+
+.menu{
+    display: none;
+    background-color: var(--color-rosa1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+section {
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 65vh;
+}
+
+.inicio-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 40px;
+}
+
+.texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+footer {
+    background-color: var(--color-griso);
+    color: var(--color-rosa1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 30px;
+    height: 15vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-rosa1);
+}
+
+.logo-footer {
+    margin-left: auto;
+    background-color: var(--color-griso);
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-footer:hover {
+    background-color: var(--color-grisc);
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.logo-footer img {
+    width: 100%;
+    max-width: 14vh;
+    border-radius: 20px;
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 649px) {
+    .menu {
+        display: block;
+        border: 0;
+        font-size: 1.4rem;
+    }
+    header {
+    justify-content: right;
+    }
+    .nave {
+        border-radius: 10px;
+        background-color: var(--color-griso);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nave.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+:root {
+    --color-blanco: #e5d0eb;
+    --color-grisc: #ad7eb8;
+    --color-griso: #572363;
+    --color-negro: #331D39;
+    --color-rosa1: #DCC1E3;
+    --color-rosa2: #F4C8FF;
+}
