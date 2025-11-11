@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP10 Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+    </style>
+
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg text-bg-secondary p-3 sticky-top">
+        <div class="container-fluid">
+            <a class="link-light navbar-brand" href="index1.5.html">Ejercicios de JavaScript 1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="link-light nav-link active" aria-current="page" href="index1.5.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link-light nav-link active" aria-current="page" href="Datos_Per.html">Datos personales</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gustos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Comidas.html">Comidas</a></li>
+                            <li><a class="dropdown-item" href="Peliculas.html">Películas</a></li>
+                            <li><a class="dropdown-item" href="Musica.html">Música</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Variables y operaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Var_Numero.html">Var numérica</a></li>
+                            <li><a class="dropdown-item" href="Var_Cadena.html">Var tipo cadena</a></li>
+                            <li><a class="dropdown-item" href="Operacion.html">Operación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Otro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Tamaño.html">Tamaño de un párrafo</a></li>
+                            <li><a class="dropdown-item" href="Verde.html">Color verde</a></li>
+                            <li><a class="dropdown-item" href="TOP10.html">Top 10</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="link-light navbar-brand" href="TOP10.html">Top 10</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.hibridosyelectricos.com/uploads/s1/12/17/76/9/elon-musk-ceo-tesla_4_1000x563.jpeg" class="d-block w-100" alt="Elon Musk">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Elon Musk</h5>
+                    <p>~ US $491 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://imagenes.elpais.com/resizer/v2/WLWHFQW5FJBUVFFZAHZVYJ434Y.JPG?auth=828f366eeafc9d0aa19ad7865b9e924d9e90f63aaa0dad8c6666a4c04f970b99&width=1000" class="d-block w-100" alt="Larry Ellison">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Larry Ellison</h5>
+                    <p>~ US $298 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://imagenes.elpais.com/resizer/v2/VVGQLDAJPRFKLF2V7X7KOJDPOU.jpg?auth=163dcef6e0bfba6739d77f887af9ad50fa8906c135ad96abb5f5360cafc673f9&width=1200" class="d-block w-100" alt="Jeff Bezos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Jeff Bezos</h5>
+                    <p>~ US $253 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://marketing4ecommerce.net/wp-content/uploads/2019/09/nueva-portada-enero-16.jpg" class="d-block w-100" alt="Mark Zuckerberg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mark Zuckerberg</h5>
+                    <p>~ US $212 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://cdn.britannica.com/43/199343-050-5A69C731/Larry-Ellison-2012.jpg?w=385" class="d-block w-100" alt="Bernard Arnault">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bernard Arnault & familia</h5>
+                    <p>~ US $177 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://media.revistagq.com/photos/643d4f5378d357ae369dd538/16:9/w_1920,c_limit/4310DDEE-6ABC-491A-A02E-CAAFC84E1157.jpeg" class="d-block w-100" alt="Larry Page">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Larry Page</h5>
+                    <p>~ US $160 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://static01.nyt.com/images/2025/01/21/espanol/GATES-1-fqhp-ES-copy1/GATES-1-fqhp-superJumbo.jpg?quality=75&auto=webp" class="d-block w-100" alt="Sergey Brin">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sergey Brin</h5>
+                    <p>~ US $154 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/warren-buffett-inc-2_535185_ug6kpf.jpg" class="d-block w-100" alt="Warren Buffett">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Warren Buffett</h5>
+                    <p>~ US $146 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2023/12/Steve-Ballmer-Windows-Logo.jpg?resize=1024%2C683&quality=70&strip=all&ssl=1" class="d-block w-100" alt="Steve Ballmer">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Steve Ballmer</h5>
+                    <p>~ US $142 000 millones</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://i0.wp.com/folou.co/wp-content/uploads/2022/08/Michael-Dell.jpg?w=1200&ssl=1" class="d-block w-100" alt="Michael Dell">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Michael Dell</h5>
+                    <p>~ US $118 000 millones</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script src="assets/js/TOP10.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

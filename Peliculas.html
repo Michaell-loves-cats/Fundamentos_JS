@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Ejercicios javascript</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg text-bg-secondary p-3 sticky-top">
+        <div class="container-fluid">
+            <a class="link-light navbar-brand link-light" href="index1.5.html">Ejercicios de JavaScript 1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="link-light nav-link active" aria-current="page" href="index1.5.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link-light nav-link active" aria-current="page" href="Datos_Per.html">Datos personales</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gustos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Comidas.html">Comidas</a></li>
+                            <li><a class="dropdown-item" href="Peliculas.html">Películas</a></li>
+                            <li><a class="dropdown-item" href="Musica.html">Música</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Variables y operaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Var_Numero.html">Var numérica</a></li>
+                            <li><a class="dropdown-item" href="Var_Cadena.html">Var tipo cadena</a></li>
+                            <li><a class="dropdown-item" href="Operacion.html">Operación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Otro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Tamaño.html">Tamaño de un parrafo</a></li>
+                            <li><a class="dropdown-item" href="Verde.html">Color verde</a></li>
+                            <li><a class="dropdown-item" href="TOP10.html">Top 10</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="link-light navbar-brand link-light" href="Peliculas.html">Películas</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5 text-center">
+        <h2 class="mb-4">Mis películas favoritas</h2>
+        <h3 id="mostrarBtn" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">...</h3>
+    </main>
+
+    <section class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" data-real-title="La familia del futuro" data-real-text="Un misterioso viajero del tiempo llamado Wilbur Robinson transporta al futuro a un niño genio para pasar un día con la excéntrica familia de Wilbur." data-real-img="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUmMReVtuuZ0lGVdCytASqyjz-FbimzBOsGOw41hF87e7-CrbH">
+                    <img id="imgPelicula1" src="https://img.freepik.com/foto-gratis/espagueti-pasta-salsa-tomate-queso-servido-plato_1220-6910.jpg" class="card-img-top" alt="Pasta">
+                    <div id="Pelicula1" class="card-body">
+                        <h5 class="card-title">Pastas, tipo spaghetti</h5>
+                        <p class="card-text">
+                            El spaghetti es quizás la pasta más conocida y amada a nivel mundial. Estas largas hebras delgadas son perfectas para acompañar una variedad de salsas, desde la clásica salsa de tomate hasta la más sofisticada carbonara.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="El principito" data-real-text="El principito (título original: Le Petit Prince) es un filme francés de animación por computadora y animación stop motion, dirigido por Mark Osborne." data-real-img="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzHQqbaSgSQxMYgsrZy8Hyvx-k1MiKaGmHV83a2ca7s7sbk6Eb">
+                <img id="imgPelicula2" src="https://i0.wp.com/irecetasfaciles.com/wp-content/uploads/2020/03/pizza-hawaiana.jpg?fit=900%2C675&ssl=1" class="card-img-top" alt="Pizza Hawaiana">
+                <div id="Pelicula2" class="card-body">
+                    <h5 class="card-title">Pizza Hawaiana</h5>
+                    <p class="card-text">La pizza hawaiana es una deliciosa combinación de sabores dulces y salados, con piña jugosa y jamón sobre una base de queso y salsa de tomate.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="ParaNorman" data-real-text="Cuando el pequeño pueblo en el que vive Norman se ve asediado por los zombis, sus habitantes sólo pueden recurrir al incomprendido Norman, quien sabe hablar con los muertos." data-real-img="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREcKuyGIZtAeRoKl2_OtBWLu_tjSLhCb5OXZwGo5TZoClsLTy1">
+                <img id="imgPelicula3" src="https://sivarious.com/wp-content/uploads/2017/03/lentejas-caseras-1.jpg" class="card-img-top" alt="Lentejas Caseras">
+                <div id="Peliculas3" class="card-body">
+                    <h5 class="card-title">Lentejas</h5>
+                    <p class="card-text">Las lentejas son un plato nutritivo y reconfortante, perfecto para los días fríos. Preparadas con ingredientes frescos y especias, ofrecen un sabor delicioso y tradicional.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="Animales fantásticos y dónde encontrarlos" data-real-text="En 1926, el mago experto en zoología Newt Scamander hace una breve parada en Nueva York mientras viaja catalogando y capturando criaturas mágicas por el mundo. Jacob, un humano corriente, provoca por error que las criaturas escapen y se oculten por la ciudad. Scamander tendrá que atraparlas de nuevo, antes de que causen problemas." data-real-img="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZKXOuF9YZj7ayOPsG5sI9x2HbnHQlQd_PNp_Vm_tLrQ9Ap_y1">
+                <img id="imgPelicula4" src="https://cdn.colombia.com/gastronomia/2013/01/25/gelatina-de-fresas-y-cerezas-3075-1.webp" class="card-img-top" alt="Gelatina de cualquier sabor">
+                <div id="Peliculas4" class="card-body">
+                    <h5 class="card-title">Gelatina de cualquier sabor</h5>
+                    <p class="card-text">Esta gelatina es un postre refrescante y colorido, ideal para cualquier ocasión. Combina el sabor dulce de las fresas y cerezas con una textura suave y gelatinosa.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100"data-real-title="Charlie y la fábrica de chocolate" data-real-text="Un niño pobre y cuatro jovencitos ricos ganan un paseo a la increíble empresa de un raro fabricante de dulces." data-real-img="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1TEhv6fRKPtAVEYt_2gSyPJRDhl_aM1IAxt-jXXQiWiHzZyrn">
+                <img src="https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-9baa5ce/www.goya.com/wp-content/uploads/2023/10/roast-adobo-pork-loin1.jpg" class="card-img-top" alt="Lomo de cerdo asado">
+                <div id="Peliculas5" class="card-body">
+                    <h5 class="card-title">Lomo de cerdo asado</h5>
+                    <p class="card-text">Este lomo de cerdo asado es una opción deliciosa y jugosa, perfecta para una comida especial. Sazonado con especias y cocido a la perfección, ofrece un sabor exquisito.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="Blancanieves y el cazador" data-real-text="Un cazador es enviado por una reina malvada a que capture a una princesa fugitiva, pero el hombre se convierte en su protector y la ayuda en su búsqueda para recuperar el control del reino." data-real-img="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAiPsNIUWjnWIaw8_mnQsOrePJZ1s-l-kFd-AjwwQGmAHhvwuv">
+                <img id="imgPelicula6" src="https://okdiario.com/img/recetas/2017/01/10/ensalada-de-atun-y-aguacate.jpg" alt="Ensalada de atún y aguacate" class="card-img-top">
+                <div id="Peliculas6" class="card-body">
+                    <h5 class="card-title">Ensalada de atún y aguacate</h5>
+                    <p class="card-text">Esta ensalada combina la frescura del aguacate con la proteína del atún, creando un plato saludable y delicioso, ideal para cualquier comida.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="Van Helsing: El cazador de monstruos" data-real-text="Un cazador de monstruos une fuerzas con una mujer hermosa para enfrentar a Drácula y otras criaturas en Transilvania." data-real-img="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPEKPlt6b0GegxsvaflIHNRHP6-GxY7BMBusDEO2SOL6X6JU10">
+                <img id="imgPelicula7" src="https://www.recetasnestle.com.do/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/28f24bb45f5dac798445dbbce991b794.jpeg?itok=7CS3MSbV" alt="Helado de chocolate" class="card-img-top">
+                <div id="Peliculas7" class="card-body">
+                    <h5 class="card-title">Helado de chocolate</h5>
+                    <p class="card-text">Este helado es un postre cremoso y refrescante, perfecto para los días calurosos. Disponible en una variedad de sabores, es una delicia para todas las edades.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="Los ilusionistas: nada es lo que parece" data-real-text="Un agente federal y un detective de la Interpol juegan al gato y al ratón con unos ilusionistas astutos que les roban a los líderes de negocios corruptos durante sus actuaciones y traspasan el dinero a los miembros de la audiencia." data-real-img="http://koha.unicoc.edu.co/cgi-bin/koha/opac-image.pl?imagenumber=122https://www.imdb.com/es/title/tt1670345/">
+                <img id="imgPelicula8" src="https://imag.bonviveur.com/empanadas-colombianas_1000.webp" alt="Empanadas" class="card-img-top">
+                <div id="Peliculas8" class="card-body">
+                    <h5 class="card-title">Empanadas</h5>
+                    <p class="card-text">Estas empanadas son un aperitivo tradicional colombiano, crujientes por fuera y rellenas de una mezcla sabrosa de carne y especias.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" data-real-title="El juego de Ender" data-real-text="Un joven talentoso exhibe un talento inusual que provoca sea elegido para un entrenamiento militar avanzado para encabezar a las fuerzas de la Tierra en una guerra intensa contra los Formics, unos invasores extraterrestres." data-real-img="https://pics.filmaffinity.com/ender_s_game-635930351-large.jpg">
+                <img id="imgPelicula9" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Changua_1.jpg" alt="Changua" class="card-img-top">
+                <div id="Peliculas9" class="card-body">
+                    <h5 class="card-title">Changua</h5>
+                    <p class="card-text">La changua es una sopa tradicional colombiana hecha con leche, huevo y cebolla, perfecta para el desayuno y para reconfortar en días fríos.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/Peliculas.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

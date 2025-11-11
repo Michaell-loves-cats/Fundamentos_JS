@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Ejercicios javascript</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg text-bg-secondary p-3 sticky-top">
+        <div class="container-fluid">
+            <a class="link-light" href="index1.5.html">Ejercicios de JavaScript 1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="link-light nav-link active" aria-current="page" href="index1.5.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link-light nav-link active" aria-current="page" href="Datos_Per.html">Datos personales</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gustos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Comidas.html">Comidas</a></li>
+                            <li><a class="dropdown-item" href="Peliculas.html">Películas</a></li>
+                            <li><a class="dropdown-item" href="Musica.html">Música</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Variables y operaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Var_Numero.html">Var numérica</a></li>
+                            <li><a class="dropdown-item" href="Var_Cadena.html">Var tipo cadena</a></li>
+                            <li><a class="dropdown-item" href="Operacion.html">Operación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="link-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Otro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Tamaño.html">Tamaño de un parrafo</a></li>
+                            <li><a class="dropdown-item" href="Verde.html">Color verde</a></li>
+                            <li><a class="dropdown-item" href="TOP10.html">Top 10</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="link-light navbar-brand" href="Musica.html">Música</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 text-center">
+        <h2 class="mb-4">Mi música favorita</h2>
+        <button id="mostrarBtn" class="btn btn-success">Ver música favorita</button>
+    </main>
+    
+    <section id="contenido" style="display:none;">
+        <!-- Fila principal de tarjetas -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Tarjeta 1 -->
+            <div class="col">
+                <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                    <video id="video1" controls>
+                    <source src="assets/imagenes/Danny Elfman - Alice im wunderland (Alice's theme) (En-SubEs).mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                    </video>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Danny Elfman - Alice's Theme</h5>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col">
+                <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                    <video id="video2" controls>
+                    <source src="assets/imagenes/Gorillaz - Broken (En-SubEsp).mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                    </video>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Gorillaz - Broken</h5>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col">
+                <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                    <video id="video3" controls>
+                    <source src="assets/imagenes/OTHERSIDE - RED HOT CHILI PEPPERS (LYRICSLETRA) SUBTITULADA INGLÉS Y ESPAÑOL.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                    </video>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Red Hot Chili Peppers - Otherside</h5>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col">
+                <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                    <video id="video4" controls>
+                    <source src="assets/imagenes/siempre no - no somos amigos (ES).mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                    </video>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Siempre No - No Somos Amigos</h5>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col">
+                <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                    <video id="video5" controls>
+                    <source src="assets/imagenes/Yipiee but its jazz (tbh creature).mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                    </video>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Yipiee (Jazz Remix)</h5>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col">
+                <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                    <audio id="audio1" controls>
+                    <source src="assets/imagenes/Tercer Cielo- Cada Dia [REMIX].mp3" type="audio/mpeg">
+                    Tu navegador no soporta el audio.
+                    </audio>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Tercer Cielo - Cada Día (Remix)</h5>
+                </div>
+                </div>
+            </div>
+
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Musica.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
