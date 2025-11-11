@@ -11,7 +11,7 @@
 <body class="bg-body-secondary">
     <nav class="navbar navbar-expand-lg text-bg-secondary p-3 sticky-top">
         <div class="container-fluid">
-            <a class="link-light" href="index1.5.html">Ejercicios de JavaScript 1</a>
+            <a class="link-light navbar-brand link-light" href="index1.5.html">Ejercicios de JavaScript 1</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,10 +54,103 @@
                         </ul>
                     </li>
                 </ul>
-                <a class="link-light" href="Peliculas.html">Películas</a>
+                <a class="link-light navbar-brand link-light" href="Peliculas.html">Películas</a>
             </div>
         </div>
     </nav>
+    <main class="container my-5 text-center">
+        <h2 class="mb-4">Mis películas favoritas</h2>
+        <h3 id="mostrarBtn" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">Lo esencial es ...</h3>
+    </main>
+
+    <section class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img id="imgPelicula1" src="https://img.freepik.com/foto-gratis/espagueti-pasta-salsa-tomate-queso-servido-plato_1220-6910.jpg" class="card-img-top" alt="Pasta">
+                    <div id="Pelicula1" class="card-body">
+                        <h5 class="card-title">Pastas, tipo spaghetti</h5>
+                        <p class="card-text">
+                            El spaghetti es quizás la pasta más conocida y amada a nivel mundial. Estas largas hebras delgadas son perfectas para acompañar una variedad de salsas, desde la clásica salsa de tomate hasta la más sofisticada carbonara.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula2" src="https://i0.wp.com/irecetasfaciles.com/wp-content/uploads/2020/03/pizza-hawaiana.jpg?fit=900%2C675&ssl=1" class="card-img-top" alt="Pizza Hawaiana">
+                <div id="Pelicula2" class="card-body">
+                    <h5 class="card-title">Pizza Hawaiana</h5>
+                    <p class="card-text">La pizza hawaiana es una deliciosa combinación de sabores dulces y salados, con piña jugosa y jamón sobre una base de queso y salsa de tomate.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula3" src="https://sivarious.com/wp-content/uploads/2017/03/lentejas-caseras-1.jpg" class="card-img-top" alt="Lentejas Caseras">
+                <div id="Peliculas3" class="card-body">
+                    <h5 class="card-title">Lentejas</h5>
+                    <p class="card-text">Las lentejas son un plato nutritivo y reconfortante, perfecto para los días fríos. Preparadas con ingredientes frescos y especias, ofrecen un sabor delicioso y tradicional.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula4" src="https://cdn.colombia.com/gastronomia/2013/01/25/gelatina-de-fresas-y-cerezas-3075-1.webp" class="card-img-top" alt="Gelatina de cualquier sabor">
+                <div id="Peliculas4" class="card-body">
+                    <h5 class="card-title">Gelatina de cualquier sabor</h5>
+                    <p class="card-text">Esta gelatina es un postre refrescante y colorido, ideal para cualquier ocasión. Combina el sabor dulce de las fresas y cerezas con una textura suave y gelatinosa.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-9baa5ce/www.goya.com/wp-content/uploads/2023/10/roast-adobo-pork-loin1.jpg" class="card-img-top" alt="Lomo de cerdo asado">
+                <div id="Peliculas5" class="card-body">
+                    <h5 class="card-title">Lomo de cerdo asado</h5>
+                    <p class="card-text">Este lomo de cerdo asado es una opción deliciosa y jugosa, perfecta para una comida especial. Sazonado con especias y cocido a la perfección, ofrece un sabor exquisito.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula6" src="https://okdiario.com/img/recetas/2017/01/10/ensalada-de-atun-y-aguacate.jpg" alt="Ensalada de atún y aguacate" class="card-img-top">
+                <div id="Peliculas6" class="card-body">
+                    <h5 class="card-title">Ensalada de atún y aguacate</h5>
+                    <p class="card-text">Esta ensalada combina la frescura del aguacate con la proteína del atún, creando un plato saludable y delicioso, ideal para cualquier comida.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula7" src="https://www.recetasnestle.com.do/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/28f24bb45f5dac798445dbbce991b794.jpeg?itok=7CS3MSbV" alt="Helado de chocolate" class="card-img-top">
+                <div id="Peliculas7" class="card-body">
+                    <h5 class="card-title">Helado de chocolate</h5>
+                    <p class="card-text">Este helado es un postre cremoso y refrescante, perfecto para los días calurosos. Disponible en una variedad de sabores, es una delicia para todas las edades.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula8" src="https://imag.bonviveur.com/empanadas-colombianas_1000.webp" alt="Empanadas" class="card-img-top">
+                <div id="Peliculas8" class="card-body">
+                    <h5 class="card-title">Empanadas</h5>
+                    <p class="card-text">Estas empanadas son un aperitivo tradicional colombiano, crujientes por fuera y rellenas de una mezcla sabrosa de carne y especias.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img id="imgPelicula9" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Changua_1.jpg" alt="Changua" class="card-img-top">
+                <div id="Peliculas9" class="card-body">
+                    <h5 class="card-title">Changua</h5>
+                    <p class="card-text">La changua es una sopa tradicional colombiana hecha con leche, huevo y cebolla, perfecta para el desayuno y para reconfortar en días fríos.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/Peliculas.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
